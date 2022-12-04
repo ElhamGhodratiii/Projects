@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/flexboxgrid.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href=""><i class="fa-solid fa-house"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="nav-right">
+                <div class="register-login-btn">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="./login.html">Login / Register</a>
+                </div>
+            </div>
+        </nav>
+        <section class="slider">
+            <div class="slides">
+                <div class="item active" id="slide1">
+                    <img src="./images/coffee1.jpg" alt="coffee">
+                    <span>Wake up and, <br>smell the coffee...</span>
+                </div>
+                <div class="item " id="slide2">
+                    <img src="./images/three-glasses.jpg" alt="cappocino">
+                    <span>I own you.<br>Life begins after coffee...</span>
+                </div>
+                <div class="item " id="slide3">
+                    <img src="./images/coffee-beans.jpg" alt="winter">
+                    <span style="color:#fffffe">Start your day with coffee...</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <i onclick="setSlide('slide1', 1)" class="fa-solid fa-circle"></i>
+                <i onclick="setSlide('slide2', 2)" class="fa-solid fa-circle"></i>
+                <i onclick="setSlide('slide3', 3)" class="fa-solid fa-circle"></i>
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <section class="products-sec">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-3">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/coffee-logo1.png" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-3">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/coffee-logo1.png" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Mocha</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">10.99€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-3">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/coffee-logo1.png" alt="">
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Latte</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">19.25€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-3">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/coffee-logo1.png" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Cappuccino</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">22.30€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer-sec">
+            <div class="row">
+
+                <div class="col-lg-9">
+                    <div class="offer-box">
+                        <span class="offer-box-title">Special Offer</span>
+                        <div class="body">
+                            <div class="row">
+                                <div class="clo-lg-4">
+                                    <div class="img-container">
+                                        <img src="./images/coffee-discount.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-container">
+                                        <div class="price-row">
+                                            <div class="price">9,99 €</div>
+                                            <div class="offer">60% Offer</div>
+                                        </div>
+                                        <div class="title">Product Name</div>
+
+                                        <div class="counter-down">
+                                            <span id="hours">19</span>:
+                                            <span id="minutes">26</span>:
+                                            <spam id="seconds">40</spam>
+                                        </div>
+                                        <div class="remainig-time">
+                                            Time remaining until the end of the order
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="banner">
+                        <img src="./images/offer.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dragble-list">
+            <div class="dragble-list-title">
+                <span>Other Products</span>
+            </div>
+            <div id="owl-product" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/cup.jpg" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/cup.jpg" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/cup.jpg" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/cup.jpg" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/cup.jpg" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/cup.jpg" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/cup.jpg" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/cup.jpg" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="./images/cup.jpg" alt="">
+                            <span class="hot-offer">Sale</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">Coffee Americano</div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">17.50€</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="text" href="">like</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="text" href="">shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="right">
+                    <div class="footer-title">
+                        About us
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio molestias iusto dolorum porro fugit excepturi officia maiores provident iste. Similique quod eveniet aliquam rem, eligendi at voluptatum, deserunt non aliquid debitis maiores reiciendis. Enim aliquam, reprehenderit repellendus laboriosam dolorum eius non eaque voluptas fugit incidunt nemo rerum facere sed quia magni officiis velit asperiores explicabo consequatur neque repudiandae accusamus veritatis. Consequatur molestias iste asperiores eveniet deleniti voluptatibus fugit porro non, ex aliquam laboriosam nostrum earum cupiditate libero ducimus eius dolore aspernatur itaque voluptates, cum necessitatibus! Cum, dolor. Ullam, dignissimos dolorem sit maiores quasi laborum quidem aperiam deserunt et distinctio suscipit vitae? Debitis voluptas blanditiis veniam sed.  
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="left">
+                    <div class="footer-title">
+                        Follow us on social networks.
+                    </div>
+                    <div class="socials">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div class="bottom">
+            <small>&copy; Copyright 2022, Elli's Coffeshop</small>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/011eb899bb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+</body>
+</html>

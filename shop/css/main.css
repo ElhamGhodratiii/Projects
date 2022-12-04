@@ -1,0 +1,19 @@
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+}
+@font-face {
+    font-family: pFont;
+    src: url(../fonts/Aloevera-OVoWO.ttf);
+}
+*{
+    box-sizing: border-box;
+    font-family: pFont;
+}
+body{
+    font-size: 16px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
